@@ -70,13 +70,13 @@ It **requires user interaction** (such as opening or executing a file) to spread
 ### **2. Worms**
 
 **Definition:**
-A *worm* is a self-replicating, network-aware program that propagates automatically **without human intervention**.
+A worm is a type of malicious software that spreads automatically across networks without user action. It exploits vulnerabilities or weak passwords to replicate, consuming bandwidth and system resources. Worms can cause widespread disruption, install backdoors, or deliver harmful payloads, making effective patching and network defenses essential for prevention.
 
 **Characteristics**
 
-* Exploits vulnerabilities or weak credentials.
-* Consumes bandwidth and resources, causing DoS-like conditions.
-* Can carry destructive payloads or install backdoors.
+* **Exploits vulnerabilities or weak credentials:** Worms take advantage of unpatched software flaws or easily guessed passwords to gain unauthorized access and spread automatically. By exploiting these weaknesses, they can infiltrate multiple systems across a network without user interaction, making timely updates and strong authentication crucial to prevent large-scale infections.
+* **Consumes bandwidth and resources, causing DoS-like conditions:** Once active, worms replicate rapidly, generating massive network traffic and consuming processing power, memory, and bandwidth. This overload can significantly slow or crash servers and network devices, creating denial-of-service–like conditions that disrupt normal operations and reduce system availability across entire organizations.
+* **Can carry destructive payloads or install backdoors:** Beyond replication, many worms deliver malicious payloads such as file deletion, data corruption, or unauthorized software installation. Some install backdoors, allowing attackers to remotely control infected systems, steal sensitive data, or deploy additional malware. These secondary actions often cause greater long-term harm than the initial infection itself.
 
 **Notable Examples**
 
@@ -88,23 +88,57 @@ A *worm* is a self-replicating, network-aware program that propagates automatica
 
 
 ### **3. Trojan Horses (and RATs)**
+A Trojan Horse is malicious software that disguises itself as a legitimate program to trick users into installing it.
 
-**Definition:**
-Software that **appears legitimate** but performs hidden, malicious actions once executed.
+Once executed, it performs hidden harmful actions such as stealing data or installing backdoors.
+Unlike viruses or worms, Trojans do not self-replicate but rely on social engineering to spread.
+They are commonly distributed through phishing emails, fake software installers, or pirated applications that appear trustworthy.
+Some Trojans install Remote Access Trojans (RATs), giving attackers full remote control over the victim’s system.
 
-**Key Traits**
+Common payloads include keylogging, credential theft, file exfiltration, and deployment of other malware such as ransomware or botnet agents.
+Effective defenses involve application whitelisting, sandbox analysis, limiting administrative privileges, and endpoint detection and response (EDR) to monitor suspicious behavior.
 
-* Delivered through email attachments, fake installers, or pirated software.
-* Does **not replicate** automatically like a virus or worm.
-* Often installs **Remote Access Trojans (RATs)** enabling attackers to control systems.
+Of course! Here’s the **English explanation** of each line from your **Trojan Horses (and RATs)** topic — translated from the Thai version above and expanded for clarity and classroom use 👇
 
-**Common Payloads**
+---
 
-* Keylogging or credential theft.
-* File exfiltration.
-* Installation of secondary malware (botnet clients, ransomware).
+### **Definition:**
 
-**Defenses:** Application whitelisting, sandbox testing, restrict administrative rights, EDR monitoring.
+**“Software that appears legitimate but performs hidden, malicious actions once executed.”**
+This means a Trojan looks like a normal or useful program — such as a utility or installer — but secretly contains harmful code. Once executed, it begins to perform unauthorized actions like stealing data, opening backdoors, or installing other malware.
+
+---
+
+### **Key Traits**
+
+1. **Delivered through email attachments, fake installers, or pirated software.**
+   Trojans are often distributed via infected email attachments disguised as invoices, software updates, or documents. They may also come bundled with fake installers or pirated software (cracks/keygens) that trick users into installing them voluntarily.
+
+2. **Does not replicate automatically like a virus or worm.**
+   Unlike viruses or worms, a Trojan cannot spread by itself. It depends entirely on social engineering — convincing users to run or open the malicious file — to infect systems.
+
+3. **Often installs Remote Access Trojans (RATs) enabling attackers to control systems.**
+   Some Trojans install **RATs (Remote Access Trojans)**, which open a remote connection that allows attackers to fully control the victim’s computer — viewing files, stealing passwords, or even activating the webcam.
+
+
+### **Common Payloads**
+
+1. **Keylogging or credential theft.**
+   Trojans can record keystrokes to steal login credentials, credit card numbers, or other sensitive data.
+
+2. **File exfiltration.**
+   They can transfer confidential or personal data from the victim’s computer to the attacker’s remote server, such as business documents or identity information.
+
+3. **Installation of secondary malware (botnet clients, ransomware).**
+   Many Trojans act as delivery tools for other malware, such as **ransomware** that encrypts files or **botnet clients** that make infected machines part of large-scale attacks.
+
+### **Defenses**
+
+* **Application whitelisting:** Allow only approved and verified software to run on systems.
+* **Sandbox testing:** Analyze suspicious files in an isolated virtual environment before executing them on production machines.
+* **Restrict administrative rights:** Limit user permissions to prevent malware from gaining system-level control.
+* **EDR monitoring:** Use **Endpoint Detection and Response (EDR)** tools to detect abnormal behavior and stop Trojan activity in real time.
+
 
 
 ### **4. Ransomware**
