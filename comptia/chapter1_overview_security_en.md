@@ -8,11 +8,10 @@ title: "Chapter 1 — Overview of Security (Revised)"
 
 # 🧭 Chapter 1 — Overview of Security
 
-### CompTIA Security+ Study Slides (Revised)
+### CompTIA Security+ Study Slides  
 
-Walailak University — Assist. Prof. Dr. CJ
-*Updated from Chapter 1 (EN) and enriched with topics from Sec‑L01*
-
+Walailak University — Assist. Prof. Dr. Chanankorn Jandaeng
+ 
 ---
 
 ## 🎯 Learning Objectives
