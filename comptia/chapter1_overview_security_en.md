@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 footer: "CompTIA Security+ — Chapter 1: Overview of Security | © Walailak University"
-title: "Chapter 1 — Overview of Security (Revised)"
+title: "Chapter 1 — Overview of Security"
 ---------------------------------------------------
 
 # 🧭 Chapter 1 — Overview of Security

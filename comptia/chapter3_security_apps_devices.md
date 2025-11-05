@@ -7,8 +7,8 @@ title: "Chapter 3: Security Applications & Devices"
 ---
 
 # 🛡️ Chapter 3: Security Applications & Devices
-### CompTIA Security+ Study Slides  
-Walailak University — Assist. Prof. Dr. CJ  
+### Cybersecurity
+Walailak University — Assist. Prof. Dr. Chanankorn Jandaeng
 
 ---
 
